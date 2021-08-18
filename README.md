@@ -10,10 +10,12 @@
 
 ### Association
 
-- has_many :displays
+- has_many :items
 - has_many :purchases
+- has_one :address
 
-## displays テーブル
+
+## items テーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
@@ -23,7 +25,8 @@
 ### Association
 
 - belongs_to :users
-- belongs_to :purchases
+- has_one :purchases
+- has_one :address
 
 ## purchases テーブル
 
@@ -35,4 +38,18 @@
 ### Association
 
 - belongs_to :users
-- belongs_to :displays
+- belongs_to :items
+- belongs_to :address
+
+## address テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| address| references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :users
+- belongs_to :items
+- belongs_to :purchases
