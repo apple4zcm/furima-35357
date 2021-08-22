@@ -1,16 +1,16 @@
 <mxfile host="65bd71144e">
     <diagram id="ORyzFpV0tRW1FOqmrYNJ" name="ページ1">
-        <mxGraphModel dx="571" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="700" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="15" value="&lt;font size=&quot;3&quot;&gt;users&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;verticalAlign=middle;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
                     <mxGeometry x="215" y="40" width="175" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="16" target="18">
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1" source="16" target="18">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="16" target="20">
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1" source="16" target="20">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="&lt;font size=&quot;3&quot;&gt;&lt;br&gt;first_name_kanji&lt;br&gt;last_name_kanji&lt;br&gt;first_name_kana&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-size: medium&quot;&gt;last_name_kana&lt;/span&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;nickname&lt;br&gt;email&lt;br&gt;encrypted_password&lt;br&gt;birthday&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
@@ -19,10 +19,7 @@
                 <mxCell id="18" value="&lt;font size=&quot;3&quot;&gt;items&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
                     <mxGeometry x="40" y="240" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="19" target="21">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="19" target="29">
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1" source="19" target="21">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="&lt;font size=&quot;3&quot;&gt;user&lt;br&gt;category_id&lt;br&gt;info&lt;br&gt;item_name&lt;br&gt;prefecture_id&lt;br&gt;item_condition_id&lt;br&gt;delivery_fee_id&lt;br&gt;delivery_date_id&lt;br&gt;&lt;/font&gt;&lt;font size=&quot;3&quot;&gt;price&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
@@ -31,7 +28,7 @@
                 <mxCell id="20" value="&lt;font size=&quot;3&quot;&gt;purchases&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
                     <mxGeometry x="440" y="240" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="21" target="29">
+                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1" source="21" target="29">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="&lt;font size=&quot;3&quot;&gt;user&lt;br&gt;item&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
