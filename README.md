@@ -15,22 +15,23 @@
 
 ### Association
 
-- has_many :item
+- has_many :items
 - has_many :purchases
 
 
 ## items テーブル
 
-| Column            | Type       | Options                        |
-| ----------------- | ---------- | ------------------------------ |
-| user              | references | null: false, foreign_key: true |
-| category_id       | integer    | null: false                    |
-| item_information  | text       | null: false                    |
-| delivery_fee_id   | integer    | null: false                    |
-| delivery_date_id  | integer    | null: false                    |
-| item_name         | string     | null: false                    |
-| item_location_id  | integer    | null: false                    |
-| price             | integer    | null: false                    |
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user               | references | null: false, foreign_key: true |
+| category_id        | integer    | null: false                    |
+| item               | text       | null: false, foreign_key: true |
+| delivery_fee_id    | integer    | null: false                    |
+| delivery_date_id   | integer    | null: false                    |
+| item_name          | string     | null: false                    |
+| item_prefecture_id | integer    | null: false                    |
+| item_condition_id  | integer    | null: false                    |
+| price              | integer    | null: false                    |
 
 ### Association
 
@@ -41,25 +42,26 @@
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
-| user_id          | references | null: false, foreign_key: true |
+| user             | references | null: false, foreign_key: true |
 | item_information | references | null: false                    |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :items
+- belongs_to :item
 - has_one :address
 
 ## address テーブル
 
-| Column         | Type   | Options                   |
-| -------------- | ------ | ------------------------- |
-| prefecture     | string | null: false               |
-| municipality   | string | null: false               |
-| house_number   | string | null: false               |
-| building       | string | null: false               |
-| postal_code    | string | null: false               |
-| telephone      | string | null: false, unique: true |
+| Column         | Type       | Options                        |
+| -------------- | ---------- | ------------------------------ |
+| prefecture_id  | integer    | null: false                    |
+| municipality   | string     | null: false                    |
+| house_number   | string     | null: false                    |
+| building       | string     |                                |
+| postal_code    | string     | null: false                    |
+| telephone      | string     | null: false                    |
+| purchase       | references | null: false, foreign_key: true |
 
 ### Association
 
