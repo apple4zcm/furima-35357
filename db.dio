@@ -25,7 +25,7 @@
                 <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="19" target="29">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="&lt;font size=&quot;3&quot;&gt;user&lt;br&gt;category_id&lt;br&gt;item_information&lt;br&gt;item_condition&lt;br&gt;item_name&lt;br&gt;item_location&lt;br&gt;delivery_fee_id&lt;br&gt;delivery_date_id&lt;br&gt;&lt;/font&gt;&lt;font size=&quot;3&quot;&gt;price&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
+                <mxCell id="19" value="&lt;font size=&quot;3&quot;&gt;user&lt;br&gt;category_id&lt;br&gt;item_information&lt;br&gt;item_name&lt;br&gt;item_location&lt;br&gt;delivery_fee_id&lt;br&gt;delivery_date_id&lt;br&gt;&lt;/font&gt;&lt;font size=&quot;3&quot;&gt;price&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
                     <mxGeometry x="40" y="270" width="120" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" value="&lt;font size=&quot;3&quot;&gt;purchases&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;strokeColor=#0000FF;fillColor=none;verticalAlign=middle;" vertex="1" parent="1">
