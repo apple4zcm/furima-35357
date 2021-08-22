@@ -25,11 +25,11 @@
 | ------------------ | ---------- | ------------------------------ |
 | user               | references | null: false, foreign_key: true |
 | category_id        | integer    | null: false                    |
-| item               | text       | null: false, foreign_key: true |
+| info               | text       | null: false                    |
 | delivery_fee_id    | integer    | null: false                    |
 | delivery_date_id   | integer    | null: false                    |
 | item_name          | string     | null: false                    |
-| item_prefecture_id | integer    | null: false                    |
+| prefecture_id      | integer    | null: false                    |
 | item_condition_id  | integer    | null: false                    |
 | price              | integer    | null: false                    |
 
@@ -40,10 +40,10 @@
 
 ## purchases テーブル
 
-| Column           | Type       | Options                        |
-| ---------------- | ---------- | ------------------------------ |
-| user             | references | null: false, foreign_key: true |
-| item_information | references | null: false                    |
+| Column | Type       | Options                        |
+| ----- | ---------- | ------------------------------ |
+| user  | references | null: false, foreign_key: true |
+| item  | references | null: false, foreign_key: true |
 
 ### Association
 
@@ -51,7 +51,7 @@
 - belongs_to :item
 - has_one :address
 
-## address テーブル
+## addresses テーブル
 
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
