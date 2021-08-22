@@ -2,14 +2,16 @@
 
 ## users テーブル
 
-| Column             | Type   | Options     |
-| ------------------ | ------ | ----------- |
-| name_kanji         | string | null: false |
-| name_kana          | string | null: false |
-| email              | string | null: false |
-| encrypted_password | string | null: false |
-| nickname           | string | null: false |
-| birthday           | string | null: false |
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| first_name_kanji   | string | null: false, unique: true |
+| last_name_kanji    | string | null: false, unique: true |
+| first_name_kana    | string | null: false, unique: true |
+| last_name_kana     | string | null: false, unique: true |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
+| nickname           | string | null: false               |
+| birthday           | date   | null: false               |
 
 ### Association
 
@@ -21,13 +23,15 @@
 
 | Column            | Type       | Options     |
 | ----------------- | ---------- | ----------- |
-| item_user         | references | null: false |
-| category          | references | null: false |
-| item_information  | references | null: false |
-| item_name         | references | null: false |
-| item_location     | references | null: false |
-| price             | references | null: false |
-| comments          | text       | null: false |
+| user              | references | null: false |
+| category_id       | integer    | null: false |
+| item_information  | text       | null: false |
+| item_condition    | references | null: false |
+| delivery_fee_id   | integer    | null: false |
+| delivery_date_id  | integer    | null: false |
+| item_name         | string     | null: false |
+| item_location_id  | integer    | null: false |
+| price             | integer    | null: false |
 
 ### Association
 
@@ -36,24 +40,28 @@
 
 ## purchases テーブル
 
-| Column          | Type       | Options     |
-| --------------- | ---------- | ----------- |
-| user_address    | references | null: false |
-| user_telephone  | references | null: false |
+| Column           | Type       | Options     |
+| ---------------- | ---------- | ----------- |
+| user_id          | references | null: false |
+| item_information | text       | null: false |
+| price            | integer    | null: false |
 
 ### Association
 
-- has_one :user
-- has_one :item
+- belongs_to :user
+- belongs_to :item
 - has_one :address
 
 ## address テーブル
 
-| Column        | Type       | Options     |
-| ------------- | ---------- | ----------- |
-| address       | references | null: false |
-| postal_code   | references | null: false |
-| telephone     | references | null: false |
+| Column         | Type       | Options                   |
+| -------------- | ---------- | ------------------------- |
+| prefecture     | references | null: false               |
+| municipality   | references | null: false               |
+| house_number   | references | null: false               |
+| building       | references | null: false               |
+| postal_code    | references | null: false               |
+| telephone      | references | null: false, unique: true |
 
 ### Association
 
